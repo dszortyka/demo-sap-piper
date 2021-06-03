@@ -11,6 +11,11 @@ pipeline {
       steps {
         abapCi abapPackagename: 'S_NWDEMO', runUnitTests: true
       }
+    } //stage 
+    stage ('Run ATC Checks') {
+      steps {
+        abapCi abapPackagename: 'S_NWDEMO', runUnitTests: true
+      }
     }
   }
 }
