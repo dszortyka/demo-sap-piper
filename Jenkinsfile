@@ -1,4 +1,5 @@
-@Library('piper-lib-os') _
+//@Library('piper-lib-os') _
+@Library('piper-library-os@v1.145.0') _
 
 //library('piper-lib-os')
 gctsCloneRepository script: this
