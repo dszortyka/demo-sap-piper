@@ -1,1 +1,6 @@
 steps:
+  gctsCloneRepository:
+    host: 'http://vhcalnplci.dummy.nodomain:8000'
+    client: '001'
+    abapCredentialsId: 'ABAPUserPasswordCredentialsId'
+    repository: 'myrepo'
