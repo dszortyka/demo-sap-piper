@@ -11,5 +11,6 @@ pipeline {
       steps {
         abapCi abapPackagename: 'S_NWDEMO', runUnitTests: true
       }
+    }
   }
 }
