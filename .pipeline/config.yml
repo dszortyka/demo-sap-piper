@@ -1,4 +1,4 @@
-steps:
+stages:
   gctsCloneRepository:
     //host: 'http://vhcalnplci.dummy.nodomain:8000'
     host: 'http://192.168.15.36:8000'
