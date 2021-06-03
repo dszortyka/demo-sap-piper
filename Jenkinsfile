@@ -1,6 +1,6 @@
 @Library('piper-lib-os') _
 
-abapEnvironmentPipeline script: this
+//abapEnvironmentPipeline script: this
 
 pipeline {
   agent any
