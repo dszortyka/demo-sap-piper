@@ -2,20 +2,31 @@
 @Library('piper-lib-os@v1.145.0') _
 
 //library('piper-lib-os')
-gctsCloneRepository script: this
+//gctsCloneRepository script: this
 
-//pipeline {
-//  agent any
-//  stages {
-//    stage ('Run Unit Tests') {
-//      steps {
-//        abapCi abapPackagename: 'S_NWDEMO', runUnitTests: true
-//      }
-//    } //stage 
-//    stage ('Run ATC Checks') {
-//      steps {
-//        abapCi abapPackagename: 'S_NWDEMO', runAtcChecks: true
-//      }
-//    }
-//  }
-//}
+pipeline {
+  agent any
+  stages {
+    stage ('Run Unit Tests') {
+      steps {
+        abapCi abapPackagename: 'S_NWDEMO', runUnitTests: true
+      }
+    } //stage 
+    stage ('Run ATC Checks') {
+      steps {
+        abapCi abapPackagename: 'S_NWDEMO', runAtcChecks: true
+      }
+    }
+    stage ('gctsCloneRepository') {
+      steps {
+        gctsCloneRepository(
+          script: this,
+          host: 'http://vhcalnplci.dummy.nodomain:8000',
+          client: '001',
+          abapCredentialsId: 'ABAPUserPasswordCredentialsId',
+          repository: 'myrepo'
+        )
+      }
+    }
+  }
+}
