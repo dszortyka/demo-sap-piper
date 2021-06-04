@@ -37,7 +37,7 @@ pipeline {
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
           repository: 'devzdemo',
           remoteRepositoryURL: "https://github.com/dszortyka/demo-sap-piper.git",
-          role: 'SOURCE',
+          role: 'TARGET',
           vSID: 'A4H',
           branch: 'main',
           commit: 'commit',
