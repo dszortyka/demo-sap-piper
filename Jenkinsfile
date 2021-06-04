@@ -17,17 +17,17 @@ pipeline {
    //     abapCi abapPackagename: 'S_NWDEMO', runAtcChecks: true
    //   }
    // }
-    stage ('gctsCloneRepository') {
-      steps {
-        gctsCloneRepository(
-          script: this,
-          host: 'http://192.168.15.40:50000',
-          client: '001',
-          abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
-          repository: 'devzdemo'
-        )
-      }
-    }
+   // stage ('gctsCloneRepository') {
+   //   steps {
+   //     gctsCloneRepository(
+   //       script: this,
+   //       host: 'http://192.168.15.40:50000',
+   //       client: '001',
+   //       abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
+   //       repository: 'devzdemo'
+   //     )
+   //   }
+   // }
     stage ('gctsDeploy') {
       steps {
         gctsDeploy(
