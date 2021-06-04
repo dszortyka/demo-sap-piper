@@ -42,9 +42,9 @@ pipeline {
           branch: 'main',
           commit: 'commit',
           scope: 'scope',
-          rollback: false,
-          configuration:
-              dummyconfig: "dummyval"
+          rollback: false
+          //configuration:
+          //    dummyconfig: "dummyval"
         )
       }
     }
