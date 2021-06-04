@@ -22,10 +22,10 @@ pipeline {
         gctsCloneRepository(
           script: this,
           //host: 'http://vhcalnplci.dummy.nodomain:8000',
-          host: 'http://192.168.15.36:8000',
+          host: 'http://192.168.15.40:50000',
           client: '001',
-          abapCredentialsId: 'ABAPUserPasswordCredentialsId',
-          repository: 'myrepo'
+          abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
+          repository: 'ZDEMO'
         )
       }
     }
