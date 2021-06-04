@@ -32,7 +32,7 @@ pipeline {
       steps {
         gctsDeploy(
           script: this,
-          host: 'http://192.168.15.40:50000',
+          host: 'https://192.168.15.40:50001',
           client: '001',
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
           repository: 'devzdemo',
