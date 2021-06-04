@@ -7,16 +7,16 @@
 pipeline {
   agent any
   stages {
-    stage ('Run Unit Tests') {
-      steps {
-        abapCi abapPackagename: 'S_NWDEMO', runUnitTests: true
-      }
-    } //stage 
-    stage ('Run ATC Checks') {
-      steps {
-        abapCi abapPackagename: 'S_NWDEMO', runAtcChecks: true
-      }
-    }
+   // stage ('Run Unit Tests') {
+   //   steps {
+   //     abapCi abapPackagename: 'S_NWDEMO', runUnitTests: true
+   //   }
+   // } //stage 
+   // stage ('Run ATC Checks') {
+   //   steps {
+   //     abapCi abapPackagename: 'S_NWDEMO', runAtcChecks: true
+   //   }
+   // }
    // stage ('gctsCloneRepository') {
    //   steps {
    //     gctsCloneRepository(
@@ -35,10 +35,10 @@ pipeline {
           host: 'https://192.168.15.40:50001',
           client: '000',
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
-          repository: 'devzdemo',
+          repository: 'zdemo',
           remoteRepositoryURL: "https://github.com/dszortyka/demo-sap-piper.git",
           role: 'TARGET',
-          vSID: 'A4H',
+          vSID: 'Z4H',
           branch: 'main',
           commit: 'commit',
           scope: 'scope',
