@@ -6,12 +6,12 @@ stages:
     repository: 'devzdemo'
 
   gctsDeploy:
-      host: 'http://192.168.15.40:50000'
-      client: '001'
+      host: 'https://192.168.15.40:50001'
+      client: '000'
       abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H'
       repository: 'devzdemo'
       remoteRepositoryURL: "https://github.com/dszortyka/demo-sap-piper.git"
-      role: 'SOURCE'
+      role: 'TARGET'
       vSID: 'A4H'
       branch: 'main'
       commit: 'commit'
