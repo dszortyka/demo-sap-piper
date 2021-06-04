@@ -33,7 +33,7 @@ pipeline {
         gctsDeploy(
           script: this,
           host: 'https://192.168.15.40:50001',
-          client: '001',
+          client: '000',
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
           repository: 'devzdemo',
           remoteRepositoryURL: "https://github.com/dszortyka/demo-sap-piper.git",
