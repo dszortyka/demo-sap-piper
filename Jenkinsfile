@@ -25,7 +25,7 @@ pipeline {
           host: 'http://192.168.15.40:50000',
           client: '001',
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
-          repository: 'ZDEMO'
+          repository: 'devzdemo'
         )
       }
     }
