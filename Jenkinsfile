@@ -28,5 +28,25 @@ pipeline {
         )
       }
     }
+    stage ('gctsDeploy') {
+      steps {
+        gctsDeploy(
+          script: this,
+          host: 'http://192.168.15.40:50000',
+          client: '001',
+          abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
+          repository: 'devzdemo',
+          remoteRepositoryURL: "https://github.com/dszortyka/demo-sap-piper.git",
+          role: 'SOURCE',
+          vSID: 'A4H',
+          branch: 'main',
+          commit: 'commit',
+          scope: 'scope',
+          rollback: false,
+          configuration:
+              dummyconfig: "dummyval"
+        )
+      }
+    }
   }
 }
