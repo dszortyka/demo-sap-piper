@@ -17,6 +17,19 @@ pipeline {
    //     abapCi abapPackagename: 'S_NWDEMO', runAtcChecks: true
    //   }
    // }
+    
+    
+    stage ('gctsExecuteABAPUnitTests') {
+      steps {
+        gctsExecuteABAPUnitTests(
+          script: this,
+          host: 'http://vhcala4hci:50000',
+          client: '001',
+          abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
+          repository: 'zdemo'
+        )
+      }
+    }
     stage ('gctsCloneRepository') {
       steps {
         gctsCloneRepository(
