@@ -37,7 +37,7 @@ pipeline {
           host: 'http://vhcala4hci:50000',
           client: '001',
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
-          repository: 'zdemo'
+          repository: 'zdemo2'
         )
       }
     }
@@ -48,10 +48,10 @@ pipeline {
           host: 'http://vhcala4hci:50000',
           client: '001',
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
-          repository: 'zdemo',
+          repository: 'zdemo2',
           remoteRepositoryURL: "https://github.com/dszortyka/demo-sap-piper.git",
           role: 'TARGET',
-          vSID: 'Z4H',
+          vSID: 'A4H',
           //branch: 'main',
           commit: 'b536287212dcfb8642cd5ecccda5afe7ca0d3dce',
           //scope: 'scope',
