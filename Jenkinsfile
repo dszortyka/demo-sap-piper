@@ -40,7 +40,7 @@ pipeline {
           role: 'TARGET',
           vSID: 'Z4H',
           //branch: 'main',
-          //commit: 'commit',
+          commit: 'b536287212dcfb8642cd5ecccda5afe7ca0d3dce',
           //scope: 'scope',
           //rollback: false
           //configuration:
