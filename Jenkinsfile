@@ -21,7 +21,7 @@ pipeline {
       steps {
         gctsCloneRepository(
           script: this,
-          host: 'https://vhcala4hci:50001',
+          host: 'http://vhcala4hci:50000',
           client: '001',
           abapCredentialsId: 'ABAPUserPasswordCredentialsId_A4H',
           repository: 'zdemo'
