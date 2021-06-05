@@ -39,8 +39,8 @@ pipeline {
           remoteRepositoryURL: "https://github.com/dszortyka/demo-sap-piper.git",
           role: 'TARGET',
           vSID: 'Z4H',
-          //branch: 'main',
-          //commit: 'commit',
+          branch: 'main',
+          commit: 'commit',
           //scope: 'scope',
           //rollback: false
           //configuration:
