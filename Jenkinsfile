@@ -61,5 +61,5 @@ pipeline {
         )
       }
     }
-  }
-}
+  } //stages
+} //pipeline
