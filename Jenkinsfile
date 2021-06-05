@@ -40,7 +40,7 @@ pipeline {
           role: 'TARGET',
           vSID: 'Z4H',
           branch: 'main',
-          commit: 'commit',
+          //commit: 'commit',
           //scope: 'scope',
           //rollback: false
           //configuration:
